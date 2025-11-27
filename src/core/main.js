@@ -5,13 +5,13 @@
 import '../scss/styles.scss';
 import * as bootstrap from 'bootstrap';
 
-import { ProductsFeature } from '../features/products/index.js';
-import { CartFeature } from '../features/cart/index.js';
-import { WishlistFeature } from '../features/wishlist/index.js';
-import { UserProfileFeature } from '../features/userProfile/index.js';
-import { StatsFeature } from '../features/stats/index.js';
-import { ActivityFeature } from '../features/activity/index.js';
-import { LowStockFeature } from '../features/lowStock/index.js';
+import { ProductsFeature } from '../features/products';
+import { CartFeature } from '../features/cart';
+import { WishlistFeature } from '../features/wishlist';
+import { UserProfileFeature } from '../features/userProfile';
+import { StatsFeature } from '../features/stats';
+import { ActivityFeature } from '../features/activity';
+import { LowStockFeature } from '../features/lowstock';
 
 // =========================
 // AppMain bootstrap
@@ -23,8 +23,10 @@ export const AppMain = (function () {
         ProductsFeature.init();
         CartFeature.init();
         WishlistFeature.init();
-        StatsFeature.init();
-        UserProfileFeature.init();
+
+        StatsFeature.init(); // bekijken
+        UserProfileFeature.init();  // bekijken
+
         ActivityFeature.init();
         LowStockFeature.init();  // nieuw
     }

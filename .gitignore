@@ -1,7 +1,7 @@
 # -------------------------
 # Node (algemeen)
 # -------------------------
-#node_modules
+#node_modules/
 
 # Eventuele build-output
 dist/
